@@ -150,3 +150,18 @@ small{color:var(--muted)}
   object-fit: cover;
   border-radius: 15px;
 }
+
+.project-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.project {
+  cursor: pointer;
+}
+
+.project:hover {
+  transform: translateY(-6px);
+  transition: 0.3s ease;
+}
