@@ -166,20 +166,25 @@ small{color:var(--muted)}
   transition: 0.3s ease;
 }
 
+.video-card {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Kunci ukuran card */
 .video-wrapper {
   position: relative;
   width: 100%;
-  padding-top: 56.25%; /* 16:9 */
+  aspect-ratio: 16 / 9; /* bikin landscape */
   overflow: hidden;
   border-radius: 12px;
 }
 
+/* Video mengikuti wrapper */
 .video-wrapper video {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: cover; /* POTONG portrait → jadi landscape */
 }
+
 
