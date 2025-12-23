@@ -186,5 +186,20 @@ small{color:var(--muted)}
   height: 100%;
   object-fit: cover; /* POTONG portrait → jadi landscape */
 }
+.project-item {
+  position: relative;
+}
+
+/* overlay default DISABLE */
+.project-overlay {
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* overlay aktif pas hover */
+.project-item:hover .project-overlay {
+  opacity: 1;
+}
 
 
