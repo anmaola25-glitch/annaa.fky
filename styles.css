@@ -190,16 +190,17 @@ small{color:var(--muted)}
   position: relative;
 }
 
-/* overlay default DISABLE */
+/* Overlay jangan nangkep klik */
 .project-overlay {
   pointer-events: none;
-  opacity: 0;
-  transition: opacity 0.3s ease;
 }
 
-/* overlay aktif pas hover */
-.project-item:hover .project-overlay {
-  opacity: 1;
+/* Pastikan video di layer atas */
+.video-wrapper {
+  position: relative;
+  z-index: 2;
 }
 
-
+.project-overlay {
+  z-index: 1;
+}
