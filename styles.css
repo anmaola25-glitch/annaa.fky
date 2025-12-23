@@ -204,3 +204,41 @@ small{color:var(--muted)}
 .project-overlay {
   z-index: 1;
 }
+
+.experience {
+  padding: 80px 0;
+}
+
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.experience-item {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 25px;
+  border-radius: 14px;
+  transition: 0.3s ease;
+}
+
+.experience-item:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.experience-item .year {
+  font-size: 14px;
+  color: #ff4da6; /* pink accent */
+  font-weight: 600;
+}
+
+.experience-item h3 {
+  margin: 10px 0;
+  font-size: 20px;
+}
+
+.experience-item p {
+  color: #ccc;
+  line-height: 1.7;
+}
